@@ -6,6 +6,13 @@ body {
   display: block;
   opacity: 0.9;
 }
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 10px;
+}
+
 
 /*header section*/
 
@@ -60,6 +67,8 @@ nav span {
   display: flex;
   flex-wrap: wrap;
   background-image: url("./images/img-mission-background.jpg");
+  border-radius: 1%;
+  position: relative;
   justify-content: center;
   align-items: center;
   height: 700px;
@@ -97,14 +106,63 @@ nav span {
 }
 
 .item img {
+  border-radius: 5%;
   height: 200px;
   width: 300px;
   display: block;
+  opacity: 0.8;
 }
 
 .item span {
   display: block;
   padding: 5px;
   font-weight: bold;
+  text-align: center;
+}
+
+/*locations section*/
+
+.locations-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.locations-container .locations {
+  padding-top: 5px;
+}
+
+#locations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  background-image: url("./images/img-locations-background.jpg");
+  height: 500px;
+  padding-top: 70px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#locations .locations-container {
+  margin: auto;
+  width: 1100px;
+}
+
+.location {
+  opacity: 1.0;
+  padding: 10px;
+  margin: 5px 20px;
+  background-color: black;
+  flex-basis: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* contact info section */
+
+.contact {
   text-align: center;
 }
