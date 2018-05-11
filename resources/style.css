@@ -74,3 +74,37 @@ nav span {
   text-align: center;
   margin: auto;
 }
+
+/*store items section*/
+
+#items {
+  height: 700px;
+  width: 1000px;
+  margin: auto;
+  padding-top: 70px;
+  justify-content: center;
+  text-align: center;
+}
+
+.items-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.item {
+  padding: 10px;
+}
+
+.item img {
+  height: 200px;
+  width: 300px;
+  display: block;
+}
+
+.item span {
+  display: block;
+  padding: 5px;
+  font-weight: bold;
+  text-align: center;
+}
