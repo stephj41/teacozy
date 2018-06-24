@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: #3c3c3c;
   font-family: helvetica, sans-serif;
   color: seashell;
   font-size: 22px;
@@ -24,7 +24,7 @@ header {
 }
 
 .header {
-  background-color: black;
+  background-color: #3c3c3c;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -77,23 +77,32 @@ nav span {
 }
 
 #mission .content {
-  background-color: black;
+  background-color: #3c3c3c;
   /*height: 125px;*/
-  width: 100%;
+  width: 80%;
   text-align: center;
   margin: auto;
+  border-radius: 10px;
+  transition: all 5s ease;
+}
+
+#mission .content:hover {
+  opacity: 0;
 }
 
 /*store items section*/
 
-#items {
+.items {
+  display: block;
   height: 700px;
   width: 1000px;
   margin: auto;
   padding-top: 70px;
   justify-content: center;
   text-align: center;
+
 }
+
 
 .items-container {
   display: flex;
@@ -105,12 +114,15 @@ nav span {
   padding: 10px;
 }
 
+
+
 .item img {
   border-radius: 5%;
   height: 200px;
   width: 300px;
   display: block;
   opacity: 0.8;
+  transition: all .5s ease;
 }
 
 .item span {
@@ -118,52 +130,56 @@ nav span {
   padding: 5px;
   font-weight: bold;
   text-align: center;
+  opacity: 1;
+
+}
+
+.item img:hover {
+  width: 330px;
+  height: 230px;
 }
 
 /*locations section*/
 
-.locations-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.locations-container .locations {
-  padding-top: 5px;
-}
-
-#locations {
+.locations {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
-  margin: auto;
   background-image: url("./images/img-locations-background.jpg");
-  height: 500px;
-  padding-top: 70px;
+  background-size: cover;
+  height: 960px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-#locations .locations-container {
-  margin: auto;
+.locations-container {
+  display: block;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 5px;
   width: 1100px;
 }
 
 .location {
+  display: block;
+  width: 300px;
   opacity: 1.0;
   padding: 10px;
-  margin: 60px 20px;
-  background-color: black;
-  flex-basis: 300px;
-  display: flex;
-  flex-direction: column;
+  margin: 50px 20px;
+  background-color: #3c3c3c;
+  flex-basis: 200px;
+  flex-direction: row;
   justify-content: center;
+  border-radius: 10px;
 }
 
 /* contact info section */
 
 .contact {
+  display: block;
   text-align: center;
   height: 200px;
 }
