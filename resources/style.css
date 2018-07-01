@@ -40,12 +40,15 @@ header {
 nav {
   text-align: right;
   flex-grow: 1;
+  margin-right: 10px;
 }
 
 nav span {
   padding: 20px 10px;
   display: inline-block;
 }
+
+
 
 .header img {
   height: 50px;
